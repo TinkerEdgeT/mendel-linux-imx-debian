@@ -1,0 +1,19 @@
+Source: linux-imx
+Maintainer: AIY Projects <support-aiyprojects@google.com>
+Build-Depends: bc, cpio, debhelper, libssl-dev, python
+Section: misc
+Priority: optional
+
+Package: linux-image-4.9.51-aiy
+Section: misc
+Priority: required
+Architecture: arm64
+Depends: kmod, perl-base
+Description: Miscellaneous tools to support the AIY Board
+
+Package: linux-headers-4.9.51-aiy
+Section: misc
+Priority: required
+Architecture: arm64
+Depends: perl-base
+Description: Miscellaneous tools to support the AIY Board
