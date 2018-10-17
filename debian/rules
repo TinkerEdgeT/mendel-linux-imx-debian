@@ -19,6 +19,7 @@ LDFLAGS :=
 BUILD_DIR := $(CURDIR)/debian/build
 DESTDIR := $(CURDIR)/debian/linux-image-$(VERSION)
 DESTDIR_HEADERS := $(CURDIR)/debian/linux-headers-$(VERSION)
+DESTDIR_KBUILD := $(CURDIR)/debian/linux-kbuild-$(VERSION)
 
 %:
 	dh $@
@@ -71,15 +72,16 @@ override_dh_auto_install:
 	find $(CURDIR)/scripts -type f | xargs file | grep 'x86-' | awk '{print $$1}' | tr -d ':' | xargs rm -f
 	mkdir -p $(BUILD_DIR)/build-tools/scripts
 	$(MAKE) $(KERNEL_OPTIONS) \
+		CROSS_COMPILE=$(DEB_HOST_GNU_TYPE)- \
 		-C $(BUILD_DIR)/build-tools/scripts -f $(CURDIR)/debian/rules.d/scripts/Makefile \
 		top_rulesdir=$(CURDIR)/debian/rules.d \
 		top_srcdir=$(CURDIR) \
 		OUTDIR=scripts \
 		install \
-		DESTDIR=$(DESTDIR_HEADERS) \
-		prefix=/usr/src/linux-headers-$(VERSION)
-	find $(BUILD_DIR)/build-tools
+		DESTDIR=$(DESTDIR_KBUILD) \
+		prefix=/usr/lib/linux-kbuild-$(VERSION)
 
 	# Setup the symlink from the modules directory to the headers
 	install -d $(DESTDIR_HEADERS)/lib/modules/$(VERSION)
 	ln -s /usr/src/linux-headers-$(VERSION) $(DESTDIR_HEADERS)/lib/modules/$(VERSION)/build
+	ln -s /usr/lib/linux-kbuild-$(VERSION)/scripts $(DESTDIR_HEADERS)/usr/src/linux-headers-$(VERSION)/scripts

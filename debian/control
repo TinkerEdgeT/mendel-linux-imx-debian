@@ -1,19 +1,26 @@
 Source: linux-imx
 Maintainer: AIY Projects <support-aiyprojects@google.com>
-Build-Depends: bc, cpio, debhelper, libssl-dev, python
+Build-Depends: bc, cpio, debhelper, gcc-aarch64-linux-gnu, libssl-dev, python
 Section: misc
 Priority: optional
 
 Package: linux-image-4.9.51-aiy
 Section: misc
 Priority: required
-Architecture: arm64
+Architecture: arm64 armhf
 Depends: kmod, ${perl:Depends}
-Description: Miscellaneous tools to support the AIY Board
+Description: Linux kernel image for the AIY Board
 
 Package: linux-headers-4.9.51-aiy
 Section: misc
 Priority: required
-Architecture: arm64
-Depends: ${perl:Depends}
-Description: Miscellaneous tools to support the AIY Board
+Architecture: arm64 armhf
+Depends: ${perl:Depends},
+         linux-kbuild-4.9.51-aiy [${Arch}]
+Description: Linux kernel headers fro the AIY Board
+
+Package: linux-kbuild-4.9.51-aiy
+Section: misc
+Priority: required
+Architecture: arm64 armhf
+Description: Linux kernel build tools for the AIY Board
