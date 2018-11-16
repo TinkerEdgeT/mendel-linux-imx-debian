@@ -1,4 +1,12 @@
-linux-imx (1) UNRELEASED; urgency=medium
+linux-imx (2) animal; urgency=high
+
+  * [Phanbell] Enable Fan at 65C
+  * MLK-19913 media: csi: fix corrupted image issue when restart CSI bridge
+  * MLK-19362: media: csi: Fix "Hresponse" and "Rx fifo overflow" camera errors
+
+ -- AIY Projects <support-aiyprojects@google.com>  Thu, 15 Nov 2018 16:28:56 -0800
+
+linux-imx (1) animal; urgency=medium
 
   * Initial release.
 
