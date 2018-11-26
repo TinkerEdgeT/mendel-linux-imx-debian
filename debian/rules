@@ -8,7 +8,10 @@ VERSION := 4.9.51-aiy
 
 ARCH := arm64
 
-DTB := freescale/fsl-imx8mq-phanbell.dtb
+DTBS := \
+	freescale/fsl-imx8mq-phanbell.dtb \
+	freescale/fsl-imx8mq-yorktown.dtb
+DTBS := $(addprefix arch/$(ARCH)/boot/dts/,$(DTBS))
 
 KERNEL_OPTIONS := \
 	ARCH=arm64 \
@@ -44,7 +47,7 @@ override_dh_auto_install:
 	ln -sf vmlinuz-$(VERSION) $(DESTDIR)/boot/Image
 	cp System.map $(DESTDIR)/boot/System.map-$(VERSION)
 	cp .config $(DESTDIR)/boot/config-$(VERSION)
-	cp arch/$(ARCH)/boot/dts/$(DTB) $(DESTDIR)/boot
+	cp $(DTBS) $(DESTDIR)/boot
 
 	# Build header directory structure
 	install -d $(DESTDIR_HEADERS)/usr/src/linux-headers-$(VERSION)
