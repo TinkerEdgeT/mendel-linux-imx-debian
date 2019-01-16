@@ -1,6 +1,7 @@
 linux-imx (3-1) mendel-beaker; urgency=medium
 
   * Cut for beaker release and version normalization.
+  * Disable Phanbell Power Savings.
 
  -- AIY Projects <support-aiyprojects@google.com>  Wed, 16 Jan 2019 12:00:00 -0800
 
