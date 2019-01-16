@@ -1,3 +1,9 @@
+linux-imx (3-1) mendel-beaker; urgency=medium
+
+  * Cut for beaker release and version normalization.
+
+ -- AIY Projects <support-aiyprojects@google.com>  Wed, 16 Jan 2019 12:00:00 -0800
+
 linux-imx (2) animal; urgency=high
 
   * [Phanbell] Enable Fan at 65C
