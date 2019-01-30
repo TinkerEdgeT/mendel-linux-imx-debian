@@ -4,23 +4,23 @@ Build-Depends: bc, cpio, debhelper, gcc-aarch64-linux-gnu, libssl-dev, python
 Section: misc
 Priority: optional
 
-Package: linux-image-4.9.51-aiy
+Package: linux-image-4.9.51-imx
 Section: misc
 Priority: optional
 Architecture: arm64 armhf
 Depends: kmod, ${perl:Depends}
-Description: Linux kernel image for the AIY Board
+Description: Linux kernel image for the Coral EdgeTPU Dev Board
 
-Package: linux-headers-4.9.51-aiy
+Package: linux-headers-4.9.51-imx
 Section: misc
 Priority: optional
 Architecture: arm64 armhf
 Depends: ${perl:Depends},
-         linux-kbuild-4.9.51-aiy [${Arch}]
-Description: Linux kernel headers fro the AIY Board
+         linux-kbuild-4.9.51-imx [${Arch}]
+Description: Linux kernel headers fro the Coral EdgeTPU Dev Board
 
-Package: linux-kbuild-4.9.51-aiy
+Package: linux-kbuild-4.9.51-imx
 Section: misc
 Priority: optional
 Architecture: arm64 armhf
-Description: Linux kernel build tools for the AIY Board
+Description: Linux kernel build tools for the Coral EdgeTPU Dev Board

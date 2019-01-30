@@ -1,3 +1,9 @@
+linux-imx (4-2) mendel-beaker; urgency=medium
+
+  * Fixing the local version number to match the IMX moniker.
+
+ -- AIY Projects <support-aiyprojects@google.com>  Wed, 30 Jan 2019 13:20:54 -0800
+
 linux-imx (4-1) mendel-beaker; urgency=medium
 
   * Fix dapm route cycle for onboard codec
