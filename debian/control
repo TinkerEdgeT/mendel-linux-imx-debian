@@ -1,5 +1,5 @@
 Source: linux-imx
-Maintainer: AIY Projects <support-aiyprojects@google.com>
+Maintainer: AIY Projects <coral-support@google.com>
 Build-Depends: bc, cpio, debhelper, gcc-aarch64-linux-gnu, libssl-dev, python
 Section: misc
 Priority: optional

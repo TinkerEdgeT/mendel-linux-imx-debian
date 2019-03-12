@@ -2,20 +2,20 @@ linux-imx (4-2) mendel-beaker; urgency=medium
 
   * Fixing the local version number to match the IMX moniker.
 
- -- AIY Projects <support-aiyprojects@google.com>  Wed, 30 Jan 2019 13:20:54 -0800
+ -- AIY Projects <coral-support@google.com>  Wed, 30 Jan 2019 13:20:54 -0800
 
 linux-imx (4-1) mendel-beaker; urgency=medium
 
   * Fix dapm route cycle for onboard codec
 
- -- AIY Projects <support-aiyprojects@google.com>  Thu, 24 Jan 2019 13:20:54 -0800
+ -- AIY Projects <coral-support@google.com>  Thu, 24 Jan 2019 13:20:54 -0800
 
 linux-imx (3-1) mendel-beaker; urgency=medium
 
   * Cut for beaker release and version normalization.
   * Disable Phanbell Power Savings.
 
- -- AIY Projects <support-aiyprojects@google.com>  Wed, 16 Jan 2019 12:00:00 -0800
+ -- AIY Projects <coral-support@google.com>  Wed, 16 Jan 2019 12:00:00 -0800
 
 linux-imx (2) animal; urgency=high
 
@@ -23,10 +23,10 @@ linux-imx (2) animal; urgency=high
   * MLK-19913 media: csi: fix corrupted image issue when restart CSI bridge
   * MLK-19362: media: csi: Fix "Hresponse" and "Rx fifo overflow" camera errors
 
- -- AIY Projects <support-aiyprojects@google.com>  Thu, 15 Nov 2018 16:28:56 -0800
+ -- AIY Projects <coral-support@google.com>  Thu, 15 Nov 2018 16:28:56 -0800
 
 linux-imx (1) animal; urgency=medium
 
   * Initial release.
 
- -- AIY Projects <support-aiyprojects@google.com>  Mon, 04 Jun 2018 16:14:00 -0800
+ -- AIY Projects <coral-support@google.com>  Mon, 04 Jun 2018 16:14:00 -0800
