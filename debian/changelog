@@ -1,9 +1,13 @@
-linux-imx (4-3) mendel-beaker; urgency=medium
+linux-imx (4-3) mendel-chef; urgency=medium
 
   * Add Provides field for linux-headers and linux-image.
   * Add IIO to defconfig.
+  * staging: gasket: apex: fix sysfs_show
+  * Add sysfs node with temperature sensor reading.
+  * Switch GPU back to 800 MHz.
+  * Reduce GPU CMA carveout to 32M.
 
- -- AIY Projects <support-aiyprojects@google.com>  Mon, 04 Mar 2019 13:58:31 -0800
+ -- Coral <coral-support@google.com>  Tue, 19 Mar 2019 17:08:25 -0700
 
 linux-imx (4-2) mendel-beaker; urgency=medium
 
