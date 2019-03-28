@@ -1,3 +1,10 @@
+linux-imx (5-3) mendel-chef; urgency=medium
+
+  * Revert the fan trip temperature.
+  * MLK-19468: drm: imx: dcss: fix blkctl setting for B1 silicon.
+
+ -- Coral <coral-support@google.com>  Tue, 19 Mar 2019 17:08:25 -0700
+
 linux-imx (4-3) mendel-chef; urgency=medium
 
   * Add Provides field for linux-headers and linux-image.
