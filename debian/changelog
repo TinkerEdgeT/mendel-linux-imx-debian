@@ -1,3 +1,11 @@
+linux-imx (6-3) mendel-chef; urgency=medium
+
+  * fsl-imx8mq: Remove unused temp_delta property
+  * qoriq_thermal: drop temp_delta in favor of hysteresis
+  * Bump package version for Chef #3
+
+ -- Coral <coral-support@google.com>  Tue, Apr 2 2019 17:08:25 -0700
+
 linux-imx (5-3) mendel-chef; urgency=medium
 
   * Revert the fan trip temperature.
