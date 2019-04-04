@@ -1,3 +1,10 @@
+linux-imx (8-3) mendel-chef; urgency=medium
+
+  * ov5645: Fix incorrect behavior of ov5645_set_regs
+  * ov5645: Fix OpenCV related issues
+
+ -- Coral <coral-support@google.com>  Thu, 04 Apr 2019 17:08:25 -0700
+
 linux-imx (7-3) mendel-chef; urgency=medium
 
   * Add sysfs node to check that driver is fully initialized
