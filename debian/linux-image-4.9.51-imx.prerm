@@ -14,4 +14,6 @@ if [ -d /etc/kernel/prerm.d ]; then
 	      --arg=$image_path /etc/kernel/prerm.d
 fi
 
+#DEBHELPER#
+
 exit 0

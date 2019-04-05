@@ -22,4 +22,6 @@ if [ -d /etc/kernel/postinst.d ]; then
 	      --arg=$image_path /etc/kernel/postinst.d
 fi
 
+#DEBHELPER#
+
 exit 0

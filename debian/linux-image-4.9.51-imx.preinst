@@ -18,4 +18,6 @@ if [ -d /etc/kernel/preinst.d ]; then
 	      --arg=$image_path /etc/kernel/preinst.d
 fi
 
+#DEBHELPER#
+
 exit 0
