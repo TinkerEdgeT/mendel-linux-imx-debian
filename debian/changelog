@@ -1,3 +1,12 @@
+linux-imx (9-3) mendel-chef; urgency=medium
+
+  * Enable UART3 which is connected to 40pin header.
+  * staging: gasket: Fix pci remove/rescan for kernel module build.
+  * staging: gasket: Add thermal sysfs nodes.
+  * Include a driver that needs IIO_TRIGGERED_BUFFER
+
+ -- Coral <coral-support@google.com>  Tue, 14 May 2019 10:36:53 -0700
+
 linux-imx (8-3) mendel-chef; urgency=medium
 
   * ov5645: Fix incorrect behavior of ov5645_set_regs
