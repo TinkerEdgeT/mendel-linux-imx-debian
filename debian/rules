@@ -4,7 +4,7 @@
 # Uncomment this to turn on verbose mode.
 # export DH_VERBOSE=1
 
-VERSION := 4.9.51-imx
+VERSION := 4.14.98-imx
 
 ARCH := arm64
 
@@ -38,8 +38,8 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	+make $(KERNEL_OPTIONS) INSTALL_MOD_PATH=$(DESTDIR) modules_install
-	rm $(DESTDIR)/lib/modules/$(VERSION)/build
-	rm $(DESTDIR)/lib/modules/$(VERSION)/source
+	rm -f $(DESTDIR)/lib/modules/$(VERSION)/build
+	rm -f $(DESTDIR)/lib/modules/$(VERSION)/source
 
 	# Setup contents of /boot
 	install -d $(DESTDIR)/boot
@@ -83,6 +83,8 @@ override_dh_auto_install:
 		install \
 		DESTDIR=$(DESTDIR_KBUILD) \
 		prefix=/usr/lib/linux-kbuild-$(VERSION)
+	# mkdir -p $(DESTDIR_KBUILD)/usr/lib/linux-kbuild-$(VERSION)
+	# touch $(DESTDIR_KBUILD)/usr/lib/linux-kbuild-$(VERSION)/hello
 
 	# Setup the symlink from the modules directory to the headers
 	install -d $(DESTDIR_HEADERS)/lib/modules/$(VERSION)
