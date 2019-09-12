@@ -5,7 +5,7 @@
 #         Debian linux-image postinst script.
 
 $|=1;
-my $version  = "4.9.51-imx";
+my $version  = "4.14.98-imx";
 
 if (-d "/etc/kernel/header_postinst.d") {
   system ("run-parts --report --exit-on-error --arg=$version " .

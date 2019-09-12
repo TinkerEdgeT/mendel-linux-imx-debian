@@ -1,1 +1,0 @@
-linux-kbuild-4.9.51-imx: wrong-path-for-interpreter usr/lib/linux-kbuild-4.9.51-imx/scripts/ver_linux (#!/bin/awk != /usr/bin/awk)
