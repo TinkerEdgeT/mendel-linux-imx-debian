@@ -6,7 +6,7 @@ Build-Depends: bc,
                gcc-aarch64-linux-gnu,
                kmod,
                libssl-dev,
-               python
+               python3
 Section: misc
 Priority: optional
 Standards-Version: 3.9.8
