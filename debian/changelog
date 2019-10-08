@@ -1,3 +1,9 @@
+linux-imx (10-1) mendel-day; urgency=medium
+
+  * Cut for day release.
+
+ -- Coral <coral-support@google.com>  Tue, 08 Oct 2019 15:10:59 -0500
+
 linux-imx (9-3) mendel-chef; urgency=medium
 
   * Enable UART3 which is connected to 40pin header.
