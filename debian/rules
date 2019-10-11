@@ -9,6 +9,7 @@ VERSION := 4.14.98-imx
 ARCH := arm64
 
 DTBS := \
+	freescale/fsl-imx8mm-columbia.dtb \
 	freescale/fsl-imx8mq-phanbell.dtb \
 	freescale/fsl-imx8mq-yorktown.dtb
 DTBS := $(addprefix arch/$(ARCH)/boot/dts/,$(DTBS))
