@@ -1,3 +1,9 @@
+linux-imx (11-1) mendel-day; urgency=medium
+
+  * Include docker-specific configuration
+
+ -- Coral <coral-support@google.com>  Tue, 15 Oct 2019 23:03:13 -0500
+
 linux-imx (10-1) mendel-day; urgency=medium
 
   * Cut for day release.
