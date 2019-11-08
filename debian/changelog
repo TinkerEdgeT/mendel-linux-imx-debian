@@ -1,3 +1,10 @@
+linux-imx (11-4) mendel-day; urgency=medium
+
+  * pwm: Send uevent from pwmchip device on channel sysfs (un)export
+  * imx8mq: tune strobe-dll-delay-target
+
+ -- Coral <coral-support@google.com>  Fri, 08 Nov 2019 14:39:52 -0600
+
 linux-imx (11-3) mendel-day; urgency=medium
 
   * Fix USB gadged crashes during system suspend/resume.
