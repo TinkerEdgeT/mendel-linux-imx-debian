@@ -49,6 +49,7 @@ override_dh_auto_install:
 	cp System.map $(DESTDIR)/boot/System.map-$(VERSION)
 	cp .config $(DESTDIR)/boot/config-$(VERSION)
 	cp $(DTBS) $(DESTDIR)/boot
+	cp arch/$(ARCH)/boot/dts/freescale/fsl-imx8mq-phanbell-m4.dtb $(DESTDIR)/boot/fsl-imx8mq-phanbell-m4.dtbo
 
 	# Build header directory structure
 	install -d $(DESTDIR_HEADERS)/usr/src/linux-headers-$(VERSION)
