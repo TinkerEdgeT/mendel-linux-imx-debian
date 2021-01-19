@@ -1,3 +1,13 @@
+linux-imx (12-1) mendel-eagle; urgency=medium
+
+  * apex: Add power control for Apex
+  * m4: Add M4 device tree overlay
+  * i2s: Enable I2S output on 40-pin header
+  * rt5645: Add a sysfs-based override for hp-detect
+  * defconfig: Add micro k8s / k3s deps to defconfig
+
+ -- Coral <coral-support@google.com>  Tue, 19 Jan 2021 14:39:52 -0600
+
 linux-imx (11-4) mendel-day; urgency=medium
 
   * pwm: Send uevent from pwmchip device on channel sysfs (un)export
